@@ -22,6 +22,8 @@ a > Drain and rinse the chickpeas. Add all ingredients to a blender and blend un
 
 This recipe gets output to pdf like so:
 
+![image](https://user-images.githubusercontent.com/8180630/55278398-2f3b1b00-52e2-11e9-908c-a646c570e2dc.png)
+
 ## Todo
 
 Future upgrade ideas:
