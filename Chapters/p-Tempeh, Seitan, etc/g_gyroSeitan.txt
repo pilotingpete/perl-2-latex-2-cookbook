@@ -1,0 +1,20 @@
+t > Greek Gyro Seitan
+s > 10 Portions > 1.5 Hour
+
+i > 1 > Tbsp > Olive Oil
+i > 1 > Large > Onion
+i > 2 > Cloves > Garlic 
+a > Sautee.
+
+i > \fr13 > tsp > Salt
+i > 1 > tsp > Marjoram
+i > 1 > tsp > Ground Rosemary
+i > 2 > Tbsp > Tomato Paste
+i > 1 > Tbsp > Soy Sauce
+i > 1 > C > Bullion Broth
+a > Combine with ingredients from step 1 in a blender and puree.
+
+i > 1\fr12 > C > Vital Wheat Gluten
+i > \fr14 > C > Chickpea Flour
+i > 2 > Tbsp > Nutritional Yeast
+a > Combine with pureed mixture from step 2 to form a dough. Fill dough into a covered dish for steaming. Steam dish with seitan dough for 1 hour.

@@ -1,0 +1,12 @@
+t > Vegan Tuna Salad
+p > none
+s > 4 Portions > 15 Minutes
+i > 1 >  > Can Chickpeas
+i > 2 >  > Chopped Celery Stalks
+i > \fr13 > C > Chopped Dill Pickle
+i > 2 > Tbsp > Vegan Mayo
+i > 1 > Tsp > White Vinegar
+i > 1 > Tbsp > Chopped Organic Kelp
+i > To Taste >  > Salt \& Pepper
+a > Drain and rinse the chickpeas. Add all to a bowl and mix.
+n > This is even better the next day.

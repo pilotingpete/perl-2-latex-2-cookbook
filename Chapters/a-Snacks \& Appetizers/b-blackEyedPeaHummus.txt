@@ -1,0 +1,12 @@
+t > Black Eyed Pea Hummus
+p > blackEyedPeaHummus.jpg
+s > 8 Portions > 15 Min
+i > 2 > Cans > Black Eyed Peas - Drained and rinsed.
+i > \fr12 >  > Onion
+i > 3 > > Cloves of Garlic
+i > \fr14 > C > Pecans
+i > 1\fr12 > Tbsp > Lemon Juice
+i > 1 > Tbsp > Hot Sauce
+i > 1 > tsp > Smoked Paprika
+i > \fr12 > tsp > Salt
+a > Combine all ingredients in a food processor until smooth.

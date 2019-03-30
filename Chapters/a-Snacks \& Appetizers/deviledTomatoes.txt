@@ -1,0 +1,15 @@
+t > Deviled Tomatoes
+p > none
+s > 8 Portions > 20 Minutes
+i > 1 > Can > Garbanzo Beans - Rinsed, Drained.
+i > \fr13 > C > Vegan Mayo
+i > 2 > Tbsp > Nutritional Yeast
+i > 1 > Tbsp > Lemon Juice
+i > 2 > tsp > Yellow Mustard
+i > 1 > tsp > Curry Powder
+i > \fr18 > tsp > Black Pepper
+i > \fr18 > tsp > Cumin
+i > \fr18 > tsp > Salt
+a > Mash all ingredients by hand
+i > > 8 to 10 > Roma Tomatoes
+A > Cut each tomato in half and scoop out the insides. Fill the hollow tomato halves with the mixture from step 1.

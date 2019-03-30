@@ -1,0 +1,18 @@
+t > West African Peanut Soup
+p > none
+s > 6 Portions > 30 Min
+
+i > 1 >  > Large Yellow Onion
+i > \fr12 > Tbsp > Olive oil
+a > Saute until in a pot until translucent.
+i > 2 >  > Carrots
+i > \fr14 > Tbsp > Grated Ginger
+i > \fr12 > tsp > Salt
+i > \fr14 > tsp > Cayenne
+A > Peel and chop the carrots. Add the carrots and spices to the pot and continue to saute for 5 minutes longer.
+i > 1 >  > Sweet Potato
+i > 2\fr12 > C > Vegetable Stock
+a > Peel and chop the sweet potato. Add to the pot with stock and simmer until the vegetables are cooked thru.
+i > \fr34 > C > Peanut Butter
+i > \fr34 > C > Vegetable/Tomato Juice
+a > Remove from the heat and add the peanut butter and Juice. Blend until smooth. 

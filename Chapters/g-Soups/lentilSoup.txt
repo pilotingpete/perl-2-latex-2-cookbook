@@ -1,0 +1,16 @@
+t > Lentil Soup
+p > none
+s > 8 Portions > 1 Hour
+
+i > 2 >  > Large Onions
+i > 4 >  > Carrots
+i > 5 > > Cloves of Garlic
+a > Use a large pot and saute in olive oil until onions are translucent.
+i > 4 > C > Lentils
+i > 1 >  > Bay Leaf
+i > 1\fr12 > tsp > Ground Cumin
+i > 1\fr12 > tsp > Ground Corriander
+i > 1\fr12 > tsp > Salt
+i > \fr14 > tsp > Turmeric
+i > 2 >  > Vegan Bullion Cubes
+a > Wash lentils and add the remaining ingredients to the pot. Cover with water and bring to a boil. Cover pot with a lid and simmer for 30-40 min. Add water as needed.

@@ -1,0 +1,23 @@
+t > Apple Pie
+p > applePie.jpg
+s > 1 Pie > 2 Hours
+a > Preheat the oven to 350 F.
+i > 240 > g > Sifted AP Flour
+i > \fr12 > tsp > Salt
+i > \fr12 > tsp > Sugar
+a > Mix ingredients to combine.
+i > 205 > g > Vegetable shortening 
+a > Cut in shortening into dry ingredient mixture either by fork or with food processor.
+i > Up to 6 > Tbsp > Cold Water
+a > Add water 1 Tbsp. at a time until a workable dough has been formed. Refrigerate until needed.
+i > 6-8 >  > Apples
+a > Peel then slice apples. Keep slices apples submerged in a water / lemon juice solution to prevent oxidation.
+a > Roll out /fr12 of the dough and line a pie tin. Drain slightly and add the sliced apples.
+i > Up to 1 > C > Sugar
+i > \fr14 > tsp > Salt
+i > \fr12 > tsp Cinnamon
+i > 2 > Tbsp > Flour
+a > Combine and sprinkle over the apples in the pie.
+i > 2 > Tbsp > Vegan Butter
+a > Dot pieces of butter onto of apples.
+a > Roll out remaining dough to form a pie top. Crimp edges and cut off excess dough. Slice steam holes in the dough, and decorate if desired. Bake for 45 min or until pie filling has been bubbling for a minimum of 5 minutes and crust is browned. If the crust is cooking too quickly, cover with aluminum foil.

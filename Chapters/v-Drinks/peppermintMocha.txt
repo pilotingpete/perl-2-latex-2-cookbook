@@ -1,0 +1,12 @@
+t > Peppermint Mocha
+p > none
+s > 1 Portions > 10 Min
+i > 250 > mL > Brewed Coffee
+i > 1 > Tbsp > Peppermint Syrup
+i > 1 > Tbsp > Vegan Coffee Creamer
+i > 2 > tsp > Cocoa Powder
+a > Add to a pre-warmed cup and stir to combine.
+i > 1 >  > Vegan Whipped Cream
+i > 1 >  > Peppermint Candy 
+i > 1 >  > Vegan Chocolate Syrup
+a > Garnish as desired.

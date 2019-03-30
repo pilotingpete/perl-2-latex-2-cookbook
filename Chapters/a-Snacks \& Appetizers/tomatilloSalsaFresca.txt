@@ -1,0 +1,13 @@
+t > Tomatillo Salsa Fresca
+p > none
+s > 4 Portions > 20 Minutes
+i > 3 >  > Tomatillos
+i > \fr12 >  > Orange or Yellow Bell Pepper
+i > 1 >  > Anaheim Chillie
+i > 1 >  > Avocado
+i > \fr13 > C > Chopped Cilantro
+a > Wash and chop the ingredients and add to a bowl.
+i > 1 >  > Lime Juice
+i > 1 > Tbsp > Agave Nectar
+i > \fr14 > tsp Salt
+a > Drizzle ingredients over the salsa. Mix gently to combine.

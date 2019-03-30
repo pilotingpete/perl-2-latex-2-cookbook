@@ -1,0 +1,19 @@
+t > Sweet and Sour Soup
+p > SweetAndSourSoup.jpg
+s > 4 Portions > 30 Min
+
+i > 1 > Tbsp > Olive Oil
+i > 1 > Tbsp > Grated Ginger
+a > Saute in a pot until soft.
+i > 6 > C > Vegetable Broth
+i > \fr12 > Tbsp > Soy Sauce
+i > 2 > Tbsp > Rice Vinegar
+i > 1 > Tbsp > Garlic Chili Sauce
+a > Add to the pot and bring to a simmer.
+i > 1 >  > Block of Tofu
+a > Cut into cubes and add to the pot. Simmer until heated thru.
+i > \fr14 >  > Red Cabbage
+i > 4 > > Green Onions
+i > 3 > > Carrots
+i > 8 > > Button Mushrooms
+a > Slice or julienne vegetables. Divide among serving bowls. Ladle broth and tofu on top.

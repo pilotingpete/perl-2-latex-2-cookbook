@@ -1,0 +1,12 @@
+t > Pizza Dough
+p > pizza.jpg
+s > 2 Portions > 1 Hour
+a > Preheat the oven to 450 F.
+i > 1 > C > Warm Water
+i > 2 > tsp > Yeast
+i > 1 > tsp > Sugar 
+a > Combine these ingredients and set aside for the yeast to bloom and become frothy. \textasciitilde 10 min.
+i > 360 > g > AP Flour
+i > \fr12 > tsp > Salt
+i > 2 > Tbsp > Olive Oil
+a > Combine these ingredients in a bowl or food processor. Add the bloomed yeast mixture from the previous step and combine. \\\\Knead dough until smooth and cover in a warm place to rise. \textasciitilde 30 min.\\\\Roll out the dough, add toppings, and bake for around 10 min. The type and quantity of toppings will affect the bake time.

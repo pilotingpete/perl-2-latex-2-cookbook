@@ -1,0 +1,12 @@
+t > Cranberry Salad
+p > none
+s > 4 Portions > 20 Minutes
+i > \fr12 > C > Sugar
+i > 1 >  > Red Vegan Jello
+i > 2 >  > Oranges
+i > 1 > Lb > Fresh Cranberries
+a > Peel one of the oranges. Add all to a food processor and chop. Transfer to a bowl.
+i > 1 > C > Celery
+i > 1 > C > Apples
+i > 1 > C > Walnuts
+a > Chop in a food processor, then add to the bowl. Stir to combine, and chill for 3 hours.

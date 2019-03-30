@@ -1,0 +1,15 @@
+t > Garlic Soup
+p > none
+s > 6 Portions > 20 Min
+
+i > 1 > L > Water
+i > 1 > Head > Garlic
+i > 1 > tsp > Salt
+i > \fr14 > tsp > Pepper
+i > 2 >  > Cloves
+i > \fr14 > tsp > Sage
+i > \fr14 > tsp > Thyme
+i > \fr12 >  > Bay Leaf
+i > 4 > Sprig > Parsley
+i > 3 > Tbsp > Olive Oil
+a > Add all ingredients to a sauce pan and simmer for 30 min. Mash the garlic once soft.

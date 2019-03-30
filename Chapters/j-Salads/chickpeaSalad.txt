@@ -1,0 +1,8 @@
+t > Chickpea Salad
+p > none
+s > 4 Portions > 15 Minutes
+i > 1 >  > Can Chickpeas
+i > 2 > Tbsp > Sweet Pickle Relish
+i > \fr12 > tsp > Creole Seasoning
+i > 2 > Tbsp > Vegan Mayo
+a > Drain and rinse the chickpeas. Add all to a bowl and mix.

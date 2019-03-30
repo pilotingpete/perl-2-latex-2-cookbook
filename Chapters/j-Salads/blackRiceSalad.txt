@@ -1,0 +1,16 @@
+t > Black Rice Salad
+p > none
+s > 4 Portions > 40 Minutes
+i > 3 > C > Cooked Black Rice
+i > \fr14 > C > Lime Juice
+i > 1\fr12 > Tbsp > Olive Oil
+i > 1 > tsp > Agave Nectar
+i > \fr14 > tsp > Salt
+i > 1 >  > Minced Garlic
+i > 2 > Tbsp > Chopped Cilantro
+a > Make vinaigrette and pour over cooked black rice. Cover and chill.
+i > 1 >  > Diced Mango
+i > 1 >  > Diced Avocado
+i > \fr12 > C > Chopped Red Onion
+i > \fr12 > C > Chopped Cilantro
+a > Add to the salad, cover and chill again before serving.

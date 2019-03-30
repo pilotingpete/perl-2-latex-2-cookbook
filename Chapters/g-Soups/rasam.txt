@@ -1,0 +1,25 @@
+t > Rasam
+p > none
+s > 10 Portions > 45 Min
+f > Rasam is a thin soup from Southern India. This recipe makes a fairly thick version. It is nice to serve with warm rice.
+i > 3 >  > Dried Red Chillies
+i > 1\fr12 > Tbsp > Dal (Lentil)
+i > 1\fr12 > Tbsp > Coriander Seeds
+i > 1 > tsp > Cumin Seeds
+i > 1 > tsp > Black Peppercorns
+a > Add ingredients to a dry pan and toast until fragrant. Then, add to a blender to process into a powder.
+i >  > 28-Oz > Can of Crushed Tomatoes
+i > 1\fr12 > L > Water
+i > 2 > tsp > Tamarind Paste
+i > 1 > Sprig > Curry Leaves
+i > 2 > Clove > Garlic
+i > 1 > tsp > Mustard Seed
+i > 1 > tsp > Ground Cumin
+i > 1 > tsp > Ground Black Pepper
+i > \fr12 > tsp > Methi Seeds (Fenugreek)
+i > \fr12 > tsp > Hing / Asafoetida
+i > 2 >  > Dried red chillies - broken.
+i > 1 > tsp > Mustard Seed
+
+
+a > Add all ingredients, including the spice powder mix from the previous step, to a sauce pan and simmer for 30 min.
