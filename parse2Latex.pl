@@ -2,6 +2,7 @@ use strict;
 use warnings;
 use File::Find::Rule;
 use File::Slurp qw(read_dir);
+use Data::Dumper::Simple;
  
 my $outputFilename = './latex/Cookbook.tex';
 
@@ -24,12 +25,25 @@ my @fields = ();
 my $root = 'Chapters';
 my @chapterArr = "";
 
-
 my $file = "./LaTeX/frontMatter.txt";
 
 open(my $fh, '<:encoding(UTF-8)', $file)
   	or die "Could not open file '$file' $!";
-		
+
+sub recipeCheck 
+{
+    # passing argument
+    my $var = $_[0];
+	my $varName = $_[1];
+	my $file = $_[2];
+      
+	if (!defined($var) or length($var) == 0)
+	{
+		print "Error with $varName in $file\n";
+		die;
+	}
+}
+
 # grab the front matter out of the frontMatter.txt file.
 while (my $row = <$fh>) {
 	
@@ -79,7 +93,7 @@ print $fw "\\graphicspath{ {images/} }\n";
 print $fw "\n";
 
 print $fw "\\setcounter{tocdepth}{2}\n";
-print $fw "%\setcounter{secnumdepth}{4}\n";
+print $fw "%\\setcounter{secnumdepth}{4}\n";
 
 print $fw "\\newcommand\\invisiblesection[1]{%\n";
   print $fw "\\refstepcounter{section}%\n";
@@ -192,25 +206,6 @@ foreach $workingDir ( @chapterArr ){
 		open(my $fr, '<:encoding(UTF-8)', $inputFilename)
   		or die "Could not open file '$inputFilename' $!";
 		
-		# grab the foreward out of the recipe if there is one.
-		while (my $row = <$fr>) {
-	
-			chomp $row;
-			@fields = split />/, $row;
-	
-			# Trim leading and trailing whitespace
-			foreach $a (@fields){
-			$a =~ s/^\s+|\s+$//g
-			}
-			
-			if ( $fields[0] =~ /^F$/i ){
-				$foreward = $fields[1];
-				print $fw "\n$foreward\n\n";
-			}
-		}
-		
-		# Return to the beginning of the file to start searching for additional recipe data down below.
-		seek $fr, 0, 0;
 		my @fields = ();
 	
 		#@#@#@#@#@#@#@#@# Loop this for each recipe found #@#@#@#@#@#@#@#@
@@ -226,6 +221,9 @@ foreach $workingDir ( @chapterArr ){
 		
 		# Build the recipe from the input file
 		while (my $row = <$fr>) {
+
+			# skip empty or whitespace lines
+			next if ($row =~ /^\s*$/);
 	
 			chomp $row;
 			@fields = split />/, $row;
@@ -237,9 +235,12 @@ foreach $workingDir ( @chapterArr ){
 	
 			# Index can be 'f' for forward or 't' for title, 'p' for picture, 's' for setup, 
 			# 'i' for ingredient, 'a' for action, 'n' for note
-	
+
 			if ( $fields[0] =~ /^T$/i ){
 				$recipeTitle = $fields[1];
+
+                recipeCheck($recipeTitle, Dumper($recipeTitle), $inputFilename);
+
 				print $fw "\\invisiblesection{$recipeTitle}\n";	# Add an invisible subsection to add to the TOC but wont show up here.
 				print $fw "\\renewcommand{\\recipeName}{$recipeTitle}\n";
 			}
@@ -257,14 +258,27 @@ foreach $workingDir ( @chapterArr ){
 			if ( $fields[0] =~ /^S$/i ){
 				$portions = $fields[1];
 				$cookTime = $fields[2];
+
+                recipeCheck($portions, Dumper($portions), $inputFilename);
+                recipeCheck($cookTime, Dumper($cookTime), $inputFilename);
+
 				print $fw "\\begin{recipe}{\\recipeName}{$portions}{$cookTime} \n";
 			}
 			
+			if ( $fields[0] =~ /^F$/i ){
+				$foreward = $fields[1];
+				print $fw "\\freeform $foreward";
+			}
 	
 			if ( $fields[0] =~ /^I$/i ){
 				$quantity = $fields[1];
 				$units = $fields[2];
 				$ingredient = $fields[3];
+
+				recipeCheck($quantity, Dumper($quantity), $inputFilename);
+				recipeCheck($units, Dumper($units), $inputFilename);
+				recipeCheck($ingredient, Dumper($ingredient), $inputFilename);
+
 				print $fw "\t\\ingredient[$quantity]{$units}{$ingredient}\n";
 			}
 	
