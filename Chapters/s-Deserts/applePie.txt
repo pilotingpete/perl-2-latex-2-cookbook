@@ -15,7 +15,7 @@ a > Peel then slice apples. Keep slices apples submerged in a water / lemon juic
 a > Roll out /fr12 of the dough and line a pie tin. Drain slightly and add the sliced apples.
 i > Up to 1 > C > Sugar
 i > \fr14 > tsp > Salt
-i > \fr12 > tsp Cinnamon
+i > \fr12 > tsp > Cinnamon
 i > 2 > Tbsp > Flour
 a > Combine and sprinkle over the apples in the pie.
 i > 2 > Tbsp > Vegan Butter
