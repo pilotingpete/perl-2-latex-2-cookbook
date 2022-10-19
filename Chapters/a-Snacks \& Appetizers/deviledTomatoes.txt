@@ -11,5 +11,5 @@ i > \fr18 > tsp > Black Pepper
 i > \fr18 > tsp > Cumin
 i > \fr18 > tsp > Salt
 a > Mash all ingredients by hand
-i > > 8 to 10 > Roma Tomatoes
+i > 8 to 10 > > Roma Tomatoes
 A > Cut each tomato in half and scoop out the insides. Fill the hollow tomato halves with the mixture from step 1.

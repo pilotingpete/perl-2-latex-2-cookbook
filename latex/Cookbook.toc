@@ -15,17 +15,17 @@
 \contentsline {chapter}{\chapternumberline {4}Tempeh, Seitan, etc}{13}
 \contentsline {section}{\numberline {4.1}Basic Seitan}{13}
 \contentsline {section}{\numberline {4.2}Greek Gyro Seitan}{15}
-\contentsline {chapter}{\chapternumberline {5}Side Dishes}{17}
-\contentsline {chapter}{\chapternumberline {6}Main Course}{18}
-\contentsline {section}{\numberline {6.1}Pizza Dough}{18}
-\contentsline {chapter}{\chapternumberline {7}Deserts}{20}
-\contentsline {section}{\numberline {7.1}Apple Pie}{20}
-\contentsline {chapter}{\chapternumberline {8}Staples}{22}
-\contentsline {section}{\numberline {8.1}Almond Milk}{22}
-\contentsline {section}{\numberline {8.2}Cashew Milk}{24}
-\contentsline {section}{\numberline {8.3}Oat Milk}{25}
-\contentsline {chapter}{\chapternumberline {9}Salads}{26}
-\contentsline {section}{\numberline {9.1}Black Rice Salad}{26}
-\contentsline {section}{\numberline {9.2}Chickpea Salad}{27}
-\contentsline {section}{\numberline {9.3}Cranberry Salad}{28}
-\contentsline {section}{\numberline {9.4}Vegan Tuna Salad}{29}
+\contentsline {chapter}{\chapternumberline {5}Side Dishes}{16}
+\contentsline {chapter}{\chapternumberline {6}Main Course}{17}
+\contentsline {section}{\numberline {6.1}Pizza Dough}{17}
+\contentsline {chapter}{\chapternumberline {7}Deserts}{19}
+\contentsline {section}{\numberline {7.1}Apple Pie}{19}
+\contentsline {chapter}{\chapternumberline {8}Staples}{21}
+\contentsline {section}{\numberline {8.1}Almond Milk}{21}
+\contentsline {section}{\numberline {8.2}Cashew Milk}{22}
+\contentsline {section}{\numberline {8.3}Oat Milk}{23}
+\contentsline {chapter}{\chapternumberline {9}Salads}{24}
+\contentsline {section}{\numberline {9.1}Black Rice Salad}{24}
+\contentsline {section}{\numberline {9.2}Chickpea Salad}{25}
+\contentsline {section}{\numberline {9.3}Cranberry Salad}{26}
+\contentsline {section}{\numberline {9.4}Vegan Tuna Salad}{27}

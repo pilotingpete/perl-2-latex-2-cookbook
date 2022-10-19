@@ -126,8 +126,6 @@ INPUT /Users/mills/code/perl-2-latex-2-cookbook/latex/./images/basicSeitan.jpg
 INPUT /Users/mills/code/perl-2-latex-2-cookbook/latex/./images/basicSeitan.jpg
 INPUT ./images/basicSeitan.jpg
 INPUT ./images/basicSeitan.jpg
-INPUT /Users/mills/code/perl-2-latex-2-cookbook/latex/./images/basicSeitan.jpg
-INPUT ./images/basicSeitan.jpg
 INPUT /Users/mills/code/perl-2-latex-2-cookbook/latex/./images/pizza.jpg
 INPUT /Users/mills/code/perl-2-latex-2-cookbook/latex/./images/pizza.jpg
 INPUT ./images/pizza.jpg
@@ -135,12 +133,6 @@ INPUT ./images/pizza.jpg
 INPUT /Users/mills/code/perl-2-latex-2-cookbook/latex/./images/applePie.jpg
 INPUT /Users/mills/code/perl-2-latex-2-cookbook/latex/./images/applePie.jpg
 INPUT ./images/applePie.jpg
-INPUT ./images/applePie.jpg
-INPUT /Users/mills/code/perl-2-latex-2-cookbook/latex/./images/applePie.jpg
-INPUT ./images/applePie.jpg
-INPUT /Users/mills/code/perl-2-latex-2-cookbook/latex/./images/applePie.jpg
-INPUT ./images/applePie.jpg
-INPUT /Users/mills/code/perl-2-latex-2-cookbook/latex/./images/applePie.jpg
 INPUT ./images/applePie.jpg
 OUTPUT /Users/mills/code/perl-2-latex-2-cookbook/latex/Cookbook.toc
 INPUT /Users/mills/code/perl-2-latex-2-cookbook/latex/Cookbook.aux
