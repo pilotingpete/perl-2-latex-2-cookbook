@@ -199,7 +199,6 @@ foreach $workingDir ( @chapterArr ){
     foreach $a (@files){
 		#print $a . "\n";
 		
-		
 		# Start scanning directories for recipes
 		my $inputFilename = $a;
 		
@@ -216,12 +215,13 @@ foreach $workingDir ( @chapterArr ){
 
 		print $fw "% Setup recipe name and image filename\n";
 
-		# clear variables
-		$aNote = "";
-		
+        # clear variables
+        $aNote = "";
+        $photoName = "none";
+        
 		# Build the recipe from the input file
 		while (my $row = <$fr>) {
-
+            
 			# skip empty or whitespace lines
 			next if ($row =~ /^\s*$/);
 	
@@ -276,7 +276,7 @@ foreach $workingDir ( @chapterArr ){
 				$ingredient = $fields[3];
 
 				recipeCheck($quantity, Dumper($quantity), $inputFilename);
-				recipeCheck($units, Dumper($units), $inputFilename);
+				#recipeCheck($units, Dumper($units), $inputFilename);
 				recipeCheck($ingredient, Dumper($ingredient), $inputFilename);
 
 				print $fw "\t\\ingredient[$quantity]{$units}{$ingredient}\n";
