@@ -1,7 +1,8 @@
 # Perl 2 Latex 2 Cookbook
 
 ## Description
-Perl 2 Latex 2 Cookbook is a bit of a rube goldberg for typesetting and quickly editing/adding/deleting recepies to a cookbook without having to type out the <img src="https://latex.codecogs.com/gif.latex?\LaTeX" /> yourself - which we all know can be a bit tedious. 
+
+Perl 2 Latex 2 Cookbook is a bit of a rube goldberg for typesetting and quickly editing/adding/deleting recipes to a cookbook without having to type out the <img src="https://latex.codecogs.com/gif.latex?\LaTeX" /> yourself - which we all know can be a bit tedious.
 
 The Perl script will parse a recipe text file with an arcane, but simple syntax, and build out the Latex. The location of the recipe files in folders dictate "Chapters".
 

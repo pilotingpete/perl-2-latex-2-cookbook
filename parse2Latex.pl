@@ -28,44 +28,44 @@ my @chapterArr = "";
 my $file = "./LaTeX/frontMatter.txt";
 
 open(my $fh, '<:encoding(UTF-8)', $file)
-  	or die "Could not open file '$file' $!";
+      or die "Could not open file '$file' $!";
 
 sub recipeCheck 
 {
     # passing argument
     my $var = $_[0];
-	my $varName = $_[1];
-	my $file = $_[2];
+    my $varName = $_[1];
+    my $file = $_[2];
       
-	if (!defined($var) or length($var) == 0)
-	{
-		print "Error with $varName in $file\n";
-		die;
-	}
+    if (!defined($var) or length($var) == 0)
+    {
+        print "Error with $varName in $file\n";
+        die;
+    }
 }
 
 # grab the front matter out of the frontMatter.txt file.
 while (my $row = <$fh>) {
-	
-	chomp $row;
-	@fields = split />/, $row;
-	
-	# Trim leading and trailing whitespace
-	foreach $a (@fields){
-	$a =~ s/^\s+|\s+$//g
-	}
-			
-	if ( $fields[0] =~ /^a$/i ){
-		$author = $fields[1];
-	}
-	
-	if ( $fields[0] =~ /^t$/i ){
-		$title = $fields[1];
-	}
-	
-	if ( $fields[0] =~ /^p$/i ){
-		$preface = $fields[1];
-	}
+    
+    chomp $row;
+    @fields = split />/, $row;
+    
+    # Trim leading and trailing whitespace
+    foreach $a (@fields){
+    $a =~ s/^\s+|\s+$//g
+    }
+            
+    if ( $fields[0] =~ /^a$/i ){
+        $author = $fields[1];
+    }
+    
+    if ( $fields[0] =~ /^t$/i ){
+        $title = $fields[1];
+    }
+    
+    if ( $fields[0] =~ /^p$/i ){
+        $preface = $fields[1];
+    }
 }
 
 close $fh;
@@ -181,153 +181,153 @@ foreach $workingDir ( @chapterArr ){
 #print $workingDir . "\n";
 
 
-	@files = File::Find::Rule->file()
-							->name('*.txt')	# Get only these file types.
-							->maxdepth(1)					# Directory depth to search.
-							->in('./Chapters/'.$workingDir);
-	
-	# Use only the portion of the directory name to the right of the hyphen
-	my @labelArr = split /-/, $workingDir;
-	my $chapterLabel = $labelArr[1];
-	$chapterLabel =~ s/^\s+|\s+$//g;	#trim whitespace
-	
-	print $fw "\n\n\n";
-	
-	print $fw "\\chapter{$chapterLabel}";
-	#print $chapterLabel . "\n";
-	
+    @files = File::Find::Rule->file()
+                            ->name('*.txt')	# Get only these file types.
+                            ->maxdepth(1)					# Directory depth to search.
+                            ->in('./Chapters/'.$workingDir);
+    
+    # Use only the portion of the directory name to the right of the hyphen
+    my @labelArr = split /-/, $workingDir;
+    my $chapterLabel = $labelArr[1];
+    $chapterLabel =~ s/^\s+|\s+$//g;	#trim whitespace
+    
+    print $fw "\n\n\n";
+    
+    print $fw "\\chapter{$chapterLabel}";
+    #print $chapterLabel . "\n";
+    
     foreach $a (@files){
-		#print $a . "\n";
-		
-		# Start scanning directories for recipes
-		my $inputFilename = $a;
-		
-		open(my $fr, '<:encoding(UTF-8)', $inputFilename)
-  		or die "Could not open file '$inputFilename' $!";
-		
-		my @fields = ();
-	
-		#@#@#@#@#@#@#@#@# Loop this for each recipe found #@#@#@#@#@#@#@#@
-		# Recipe Start
-		print $fw "\n\n\n";
-		print $fw "%_______________START RECIPE______________\n";
-		print $fw "\n";
+        #print $a . "\n";
+        
+        # Start scanning directories for recipes
+        my $inputFilename = $a;
+        
+        open(my $fr, '<:encoding(UTF-8)', $inputFilename)
+          or die "Could not open file '$inputFilename' $!";
+        
+        my @fields = ();
+    
+        #@#@#@#@#@#@#@#@# Loop this for each recipe found #@#@#@#@#@#@#@#@
+        # Recipe Start
+        print $fw "\n\n\n";
+        print $fw "%_______________START RECIPE______________\n";
+        print $fw "\n";
 
-		print $fw "% Setup recipe name and image filename\n";
+        print $fw "% Setup recipe name and image filename\n";
 
         # clear variables
         $aNote = "";
         $photoName = "none";
         
-		# Build the recipe from the input file
-		while (my $row = <$fr>) {
+        # Build the recipe from the input file
+        while (my $row = <$fr>) {
             
-			# skip empty or whitespace lines
-			next if ($row =~ /^\s*$/);
-	
-			chomp $row;
-			@fields = split />/, $row;
-	
-			# Trim leading and trailing whitespace
-			foreach $a (@fields){
-			$a =~ s/^\s+|\s+$//g
-			}
-	
-			# Index can be 'f' for forward or 't' for title, 'p' for picture, 's' for setup, 
-			# 'i' for ingredient, 'a' for action, 'n' for note
+            # skip empty or whitespace lines
+            next if ($row =~ /^\s*$/);
+    
+            chomp $row;
+            @fields = split />/, $row;
+    
+            # Trim leading and trailing whitespace
+            foreach $a (@fields){
+            $a =~ s/^\s+|\s+$//g
+            }
+    
+            # Index can be 'f' for forward or 't' for title, 'p' for picture, 's' for setup, 
+            # 'i' for ingredient, 'a' for action, 'n' for note
 
-			if ( $fields[0] =~ /^T$/i ){
-				$recipeTitle = $fields[1];
+            if ( $fields[0] =~ /^T$/i ){
+                $recipeTitle = $fields[1];
 
                 recipeCheck($recipeTitle, Dumper($recipeTitle), $inputFilename);
 
-				print $fw "\\invisiblesection{$recipeTitle}\n";	# Add an invisible subsection to add to the TOC but wont show up here.
-				print $fw "\\renewcommand{\\recipeName}{$recipeTitle}\n";
-			}
-	
-			if ( $fields[0] =~ /^P$/i ){
-				$photoName = $fields[1];
-				
-				print $fw "\\def \\imageName {./images/$photoName}\n";
-				print $fw "% If no image, use a placeholder image instead\n";
-				print $fw "\\IfFileExists{\\imageName}{}{\\def \\imageName{./images/placeHolder.jpg}} \n";
-				print $fw "% End setup recipe name and image filename\n";
-				print $fw "\n";
-			}
-	
-			if ( $fields[0] =~ /^S$/i ){
-				$portions = $fields[1];
-				$cookTime = $fields[2];
+                print $fw "\\invisiblesection{$recipeTitle}\n";	# Add an invisible subsection to add to the TOC but wont show up here.
+                print $fw "\\renewcommand{\\recipeName}{$recipeTitle}\n";
+            }
+    
+            if ( $fields[0] =~ /^P$/i ){
+                $photoName = $fields[1];
+                
+                print $fw "\\def \\imageName {./images/$photoName}\n";
+                print $fw "% If no image, use a placeholder image instead\n";
+                print $fw "\\IfFileExists{\\imageName}{}{\\def \\imageName{./images/placeHolder.jpg}} \n";
+                print $fw "% End setup recipe name and image filename\n";
+                print $fw "\n";
+            }
+    
+            if ( $fields[0] =~ /^S$/i ){
+                $portions = $fields[1];
+                $cookTime = $fields[2];
 
                 recipeCheck($portions, Dumper($portions), $inputFilename);
                 recipeCheck($cookTime, Dumper($cookTime), $inputFilename);
 
-				print $fw "\\begin{recipe}{\\recipeName}{$portions}{$cookTime} \n";
-			}
-			
-			if ( $fields[0] =~ /^F$/i ){
-				$foreward = $fields[1];
-				print $fw "\\freeform $foreward";
-			}
-	
-			if ( $fields[0] =~ /^I$/i ){
-				$quantity = $fields[1];
-				$units = $fields[2];
-				$ingredient = $fields[3];
+                print $fw "\\begin{recipe}{\\recipeName}{$portions}{$cookTime} \n";
+            }
+            
+            if ( $fields[0] =~ /^F$/i ){
+                $foreward = $fields[1];
+                print $fw "\\freeform $foreward";
+            }
+    
+            if ( $fields[0] =~ /^I$/i ){
+                $quantity = $fields[1];
+                $units = $fields[2];
+                $ingredient = $fields[3];
 
-				recipeCheck($quantity, Dumper($quantity), $inputFilename);
-				#recipeCheck($units, Dumper($units), $inputFilename);
-				recipeCheck($ingredient, Dumper($ingredient), $inputFilename);
+                recipeCheck($quantity, Dumper($quantity), $inputFilename);
+                #recipeCheck($units, Dumper($units), $inputFilename);
+                recipeCheck($ingredient, Dumper($ingredient), $inputFilename);
 
-				print $fw "\t\\ingredient[$quantity]{$units}{$ingredient}\n";
-			}
-	
-			if ( $fields[0] =~ /^A$/i ){
-				$anAction = $fields[1];
-				print $fw "\t$anAction\n";
-			}
-	
-			if ( $fields[0] =~ /^N$/i ){
-				$aNote = $fields[1];
-				print $fw "\\end{recipe}\n";
-				print $fw "\n";
-		
-				print $fw "\\begin{flushleft}\n";
-					print $fw "\tNote: $aNote\n";
-				print $fw "\\end{flushleft}\n";
-			}
-	
-			#print "@fields\n"
-		}
+                print $fw "\t\\ingredient[$quantity]{$units}{$ingredient}\n";
+            }
+    
+            if ( $fields[0] =~ /^A$/i ){
+                $anAction = $fields[1];
+                print $fw "\t$anAction\n";
+            }
+    
+            if ( $fields[0] =~ /^N$/i ){
+                $aNote = $fields[1];
+                print $fw "\\end{recipe}\n";
+                print $fw "\n";
+        
+                print $fw "\\begin{flushleft}\n";
+                    print $fw "\tNote: $aNote\n";
+                print $fw "\\end{flushleft}\n";
+            }
+    
+            #print "@fields\n"
+        }
 
-		close $fr;
+        close $fr;
 
-		# If there is no note, end the recipe here. Otherwise, the recipe already ended in the note above.
-		if ($aNote eq "")
-		{
-		  print $fw "\\end{recipe}\n";
-		}
+        # If there is no note, end the recipe here. Otherwise, the recipe already ended in the note above.
+        if ($aNote eq "")
+        {
+          print $fw "\\end{recipe}\n";
+        }
 
-		print $fw "\n";
+        print $fw "\n";
 
-		if( $photoName ne "none" ){
-			print $fw "\\begin{figure}[H]\n";
-			print $fw "\t\\centering\n";
-			print $fw "\t\\edef\\tmp{\\noexpand\\includegraphics[width=\\myImageScalar\\textwidth]{\\imageName}}\\tmp\n";
-			print $fw "\t\\caption{\\recipeName}\n";
-			print $fw "\\end{figure}\n";
-		}
-		
-		print $fw "\n";
+        if( $photoName ne "none" ){
+            print $fw "\\begin{figure}[H]\n";
+            print $fw "\t\\centering\n";
+            print $fw "\t\\edef\\tmp{\\noexpand\\includegraphics[width=\\myImageScalar\\textwidth]{\\imageName}}\\tmp\n";
+            print $fw "\t\\caption{\\recipeName}\n";
+            print $fw "\\end{figure}\n";
+        }
+        
+        print $fw "\n";
 
-		print $fw "\\newpage\n";
+        print $fw "\\newpage\n";
 
-		print $fw "\n";
-		print $fw "%________________END RECIPE_______________\n";
-		print $fw "\n\n\n";
-		# Recipe End
-		#@#@#@#@#@#@#@#@# Loop this for each recipe found #@#@#@#@#@#@#@#@
-	}
+        print $fw "\n";
+        print $fw "%________________END RECIPE_______________\n";
+        print $fw "\n\n\n";
+        # Recipe End
+        #@#@#@#@#@#@#@#@# Loop this for each recipe found #@#@#@#@#@#@#@#@
+    }
 }
 
 

@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1666170449 "/Users/mills/code/perl-2-latex-2-cookbook/latex/Cookbook.tex" "/Users/mills/code/perl-2-latex-2-cookbook/latex/Cookbook.pdf" "Cookbook" 1666170451
+["pdflatex"] 1666170449 "/Users/mills/code/perl-2-latex-2-cookbook/latex/Cookbook.tex" "/Users/mills/code/perl-2-latex-2-cookbook/latex/Cookbook.pdf" "Cookbook" 1666170885
   "/Users/mills/code/perl-2-latex-2-cookbook/latex/Cookbook.aux" 1666170450 3749 2070ee7a537201a9e4b4a03f47324ffc ""
-  "/Users/mills/code/perl-2-latex-2-cookbook/latex/Cookbook.tex" 1666170448 23687 d4e6449ddcbd656d245d0106c2425e2f ""
+  "/Users/mills/code/perl-2-latex-2-cookbook/latex/Cookbook.tex" 1666170884 23687 d4e6449ddcbd656d245d0106c2425e2f ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1480098688 1616 371d1ee60c04b008c8fd760060cd34f1 ""
@@ -64,7 +64,7 @@
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1523934516 4220280 10cab8fbd7c5a7c52aba9917e190d018 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
   "Cookbook.aux" 1666170450 3749 2070ee7a537201a9e4b4a03f47324ffc ""
-  "Cookbook.tex" 1666170448 23687 d4e6449ddcbd656d245d0106c2425e2f ""
+  "Cookbook.tex" 1666170884 23687 d4e6449ddcbd656d245d0106c2425e2f ""
   "Cookbook.toc" 1666170450 1888 7abbcf0cde6227e07f427cf0ceba035a ""
   "images/SweetAndSourSoup.jpg" 1666162709 1932741 f520605c7cf87b2a3c81e8f488a5c996 ""
   "images/applePie.jpg" 1666162709 2385180 6f2d1084057bf7ddeacc1e5f844b064b ""
@@ -73,9 +73,9 @@
   "images/hummus.jpg" 1666162709 83870 1371bb3736e049cd347639c1ff2e8049 ""
   "images/pizza.jpg" 1666162709 110101 11ad1ea4c9946de3a893ad31244534fd ""
   (generated)
-  "Cookbook.log"
-  "/Users/mills/code/perl-2-latex-2-cookbook/latex/Cookbook.pdf"
-  "Cookbook.pdf"
   "Cookbook.toc"
-  "/Users/mills/code/perl-2-latex-2-cookbook/latex/Cookbook.log"
+  "/Users/mills/code/perl-2-latex-2-cookbook/latex/Cookbook.pdf"
   "Cookbook.aux"
+  "Cookbook.pdf"
+  "/Users/mills/code/perl-2-latex-2-cookbook/latex/Cookbook.log"
+  "Cookbook.log"
